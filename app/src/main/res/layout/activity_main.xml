@@ -4,12 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <FrameLayout xmlns:app="http://schemas.android.com/apk/res/android"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <fragment
             android:id="@+id/timer"
-            android:name="com.bankmtk.timerfragment.TimerFtagment"
+            android:name="com.bankmtk.timerfragment.TimerFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
