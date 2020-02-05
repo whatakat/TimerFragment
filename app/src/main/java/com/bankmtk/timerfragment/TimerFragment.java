@@ -12,8 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import java.util.concurrent.Delayed;
-import java.util.logging.LogRecord;
 
 public class TimerFragment extends Fragment {
     private static final long DECSECONDS_IN_HOUR = 36000;
@@ -76,7 +74,7 @@ public class TimerFragment extends Fragment {
                 textHour.setText(String.format("%02d", hour));
                 textMinute.setText(String.format("%02d", minute));
                 textSecond.setText(String.format("%02d", second));
-                textDecsecond.setText(String.format("%01d", decsecond));
+                textDecsecond.setText(String.format("%02d", decsecond));
                 if (running) {
                     decseconds++;
                 }
