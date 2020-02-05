@@ -38,6 +38,14 @@ public class TimerFragment extends Fragment {
         textSecond = (TextView)view.findViewById(R.id.textSecond);
         textDecsecond = (TextView)view.findViewById(R.id.textDecsecond);
 
+        Button start = (Button)view.findViewById(R.id.buttonStart);
+        start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                running = true;
+            }
+        });
+
         Button stop = (Button)view.findViewById(R.id.buttonStop);
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
